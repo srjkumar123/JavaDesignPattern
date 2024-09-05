@@ -1,0 +1,31 @@
+
+
+Builder Design Pattern एक creational design pattern है, जिसका उपयोग complex objects को
+step-by-step बनाने के लिए किया जाता है। जब objects को create करना बहुत complex हो जाता है, यानी
+जब constructor में बहुत सारे parameters होते हैं, तो Builder Pattern का उपयोग किया जाता है।
+
+-------------------------------------------------------------------------------------
+
+>>Why Use Builder Design Pattern?
+ 1.Complex Object Construction:
+    जब एक object को create करने के लिए कई parameters की जरूरत होती है, और उन parameters का
+    order और type भी महत्वपूर्ण होता है, तो constructor बहुत complex हो सकता है। इससे code की readability
+    और maintainability प्रभावित होती है।
+    Builder Pattern का उपयोग करने से आप object को step-by-step build कर सकते हैं, जिससे code ज्यादा readable
+    और manageable हो जाता है।
+
+ 2.Immutable Objects:
+    यह pattern immutable objects create करने में मदद करता है, यानी एक बार object create हो जाने के
+    बाद उसे modify नहीं किया जा सकता। यह thread-safe और reliable code लिखने में मदद करता है।
+
+ 3.Method Chaining:
+    Builder Pattern का उपयोग method chaining को support करता है, जिससे code concise और fluent बनता है।
+
+
+
+-------------------------------------------------------------------------------------
+>>Real-World Analogy:
+    मान लीजिए आप एक घर बनाना चाहते हैं। घर को बनाने के लिए बहुत सारी चीज़ों की जरूरत होगी, जैसे कि foundation,
+    walls, roof, doors, और windows। अगर एक constructor होता जिसमें सभी चीज़ें एक साथ pass करनी पड़तीं,
+    तो यह बहुत complex हो जाता। इसके बजाय, एक builder आता है, जो पहले foundation बनाता है, फिर walls, और
+    step-by-step पूरा घर तैयार करता है।

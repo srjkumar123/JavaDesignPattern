@@ -1,0 +1,67 @@
+
+>>Factory Design Pattern एक creational design pattern है,
+जिसका उपयोग objects को create करने के लिए किया जाता है।
+इसे Factory Method Pattern भी कहा जाता है। इस pattern में object creation logic को encapsulate किया जाता है,
+जिससे object creation process flexible और maintainable हो जाता है।
+
+
+=======================================================================================
+
+
+Concept Behind Factory Design Pattern:
+जब हम किसी application में कई types के objects create करने की जरूरत महसूस करते हैं,
+तो उन्हें directly instantiate करने के बजाय, एक central place (Factory) का उपयोग करते हैं,
+जो objects create करने का निर्णय लेता है। इससे हमें flexibility मिलती है और code में tight coupling कम होती है।
+
+=======================================================================================
+
+
+Why Use Factory Design Pattern?
+
+1.Object Creation Encapsulation:
+    Object creation logic को encapsulate करने से client code को यह जानने की जरूरत नहीं होती कि
+    object कैसे और किस प्रकार का बनाया जा रहा है।
+    यह approach हमें future में object creation logic को बदलने की सुविधा भी देता है, बिना client code में बदलाव किए।
+
+2.Loose Coupling:
+    Factory Design Pattern से client और concrete classes के बीच की dependency कम हो जाती है।
+    Client सिर्फ factory से object मांगता है, जिससे उसे इस बात की जानकारी नहीं होती कि actual object किस class का है।
+
+3.Single Responsibility Principle:
+    Factory class का एक ही जिम्मा होता है: object creation।
+    इससे classes की responsibilities clear और distinct रहती हैं।
+
+=======================================================================================
+
+
+Real-World Analogy:
+ सोचिए कि आप एक car manufacturing plant के owner हैं।
+ हर बार जब किसी customer को एक car की जरूरत होती है,
+ तो आप manually car बनाने की प्रक्रिया शुरू नहीं करते। इसके बजाय, आप एक factory setup करते हैं,
+ जहाँ customer अपनी जरूरत के हिसाब से car का model चुन सकता है,
+ और factory उस model की car बनाकर customer को देती है।
+ यही concept software development में भी लागू होता है,
+ जहाँ आप objects create करने के लिए एक factory method का उपयोग करते हैं।
+
+
+
+>>Benefits of Factory Design Pattern:
+
+1.Decoupling:
+ Object creation और client code के बीच dependency को कम करता है, जिससे code modular और flexible बनता है।
+
+2.Reusability:
+ एक बार factory class बनाने के बाद, आप इसे reusability के लिए कई जगह उपयोग कर सकते हैं।
+
+3.Scalability:
+ अगर आप नए product types (shapes) add करना चाहते हैं, तो आप नई classes create कर सकते हैं और
+ उन्हें factory method में include कर सकते हैं, बिना existing client code में बदलाव किए।
+
+4.Maintainability:
+ Object creation logic को centralize करके maintain करना आसान हो जाता है। आप future में changes करने के
+ लिए केवल factory method को modify कर सकते हैं।
+
+**Conclusion:
+ Factory Design Pattern एक powerful tool है, जब आपको object creation logic को encapsulate करने और
+ code को loosely coupled और maintainable रखने की जरूरत होती है। यह pattern code को flexible, scalable,
+ और reusability-friendly बनाता है, जिससे आपके software की quality और robustness में सुधार होता है।

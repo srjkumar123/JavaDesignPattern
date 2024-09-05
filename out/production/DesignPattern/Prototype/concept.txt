@@ -1,0 +1,26 @@
+
+
+
+The Prototype Design Pattern is a creational design pattern used to create duplicate objects while
+keeping performance in mind. It involves copying an existing object rather than creating a new instance
+from scratch. This can be particularly useful when object creation is costly or complex.
+
+Key Concepts:
+Prototype Interface: This interface declares a clone method that should be implemented by concrete
+classes to allow cloning of instances.
+
+Concrete Prototype: These classes implement the Prototype interface and define the clone method.
+They handle the actual cloning process.
+
+Client: The client uses the prototype instance to create new objects by cloning the existing
+prototype rather than creating new ones from scratch.
+
+How It Works:
+Prototype Declaration: The prototype interface declares the clone method which returns a copy
+of the object.
+
+Concrete Implementation: Concrete classes implement the prototype interface and provide the logic
+for cloning.
+
+Cloning: The client uses the prototype to create new objects. Instead of constructing a new object,
+ it clones the prototype

@@ -1,0 +1,18 @@
+
+
+
+>>>What is method chaining?
+    Method Chaining एक programming technique है जिसमें multiple methods को एक single statement में
+    sequentially call किया जाता है। इस technique में हर method खुद का reference (this) return करता है,
+    जिससे अगले method को call करने की सुविधा मिलती है। यह approach code को concise, readable, और fluent बनाता है।
+
+
+>>>Explanation:
+1.Returning this:
+    हर method (setName, setAge, setAddress) खुद का reference (this) return करता है। इससे method chaining
+    संभव हो जाती है क्योंकि returned object पर आप अगले method को call कर सकते हैं।
+2.Sequential Method Calls:
+    person.setName("John Doe") method call करता है और person object को return करता है।
+    उसके बाद, उसी returned object पर .setAge(30) method call होता है, और फिर वह भी person object return
+    करता है।
+    Finally, .setAddress("123 Main St") method call होता है, और फिर से person object return होता है।
